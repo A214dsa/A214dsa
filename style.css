@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+ background-image: url("A1.jpg.jpg");
+ background-size: cover;
+ background-attachment: scroll;
+ background-color: rgba(0, 0, 0, 0.2);
+}
+.container{
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.container .navigation{
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container .navigation #check{
+    display: none;
+}
+.container .navigation .bars{
+    float: right;
+    margin-top: 30px;
+    margin-right:60px ;
+    font-size: 25px;
+    line-height: 50px;
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+.container .navigation .logo h2{
+    margin: 40px 20px 0 90px;
+    width: 60px;
+    font-size: 50px;
+    font-family: serif;
+    color: rgb(245, 100, 100);
+}
+.container .navigation .logo h2:hover{
+    color: #fff;
+}
+.container .navigation ul{
+display: flex;
+float: right;
+margin-right: 100px;
+margin-top: -30px;
+border: none;
+}
+.container .navigation ul li{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 50px;
+    color: rgb(245, 100, 100);
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container .navigation ul li:hover{
+    background-color: #fff;
+    border-radius: 50%;
+}
+.container .header{
+    margin: 140px 0 0 60px;
+    color: rgb(245, 100, 100);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.container .header p{
+margin-top:50px ;
+width: 590px;
+color: #fff;
+}
+.container .form {
+    margin-top: -260px;
+    margin-right: 50px;
+    height: 590px;
+    width: 400px;
+    float: right;
+    border:  2px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.container .form  h1{
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+}
+.container .form form{
+    margin-top: 30px;
+}
+.container .form form label{
+    margin: 10px 0 0 30px;
+    color: red;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .form form input[type="text"]{
+    margin: 10px 0 0 30px;
+  height: 40px;
+    width: 240px;
+    background-color:#fff;
+    border-radius: 40%;
+}
+.container .form form input[type="email"]{
+    margin: 10px 0 0 30px;
+    height: 40px;
+    width: 240px;
+    background-color:#fff;
+    border-radius: 40%;
+}
+.container .form form input[type="password"]{
+    margin: 10px 0 0 30px;
+    height: 40px;
+    width: 240px;
+    background-color:#fff;
+    border-radius: 40%;
+}
+
+.container .form form input[type="Submit"]{
+    margin-top: 10px;
+    padding: 10px;
+    width: 90px;
+    background-color: red;
+    color: #fff;
+    margin-left: 120px;
+    border-radius: 40%;
+    }
+.container .form form p{
+    margin: 25px 0 0 20px;
+    color: red;
+}
+.container .form form h4{
+    margin-top: 20px;
+    color: #fff;
+}
+.container .footer h4{
+    margin: 50px 0 0 90px;
+    color: rgb(245, 100, 100);
+    font-size: 30px;
+}
+.container .footer a i{
+ margin-top: 20px;
+padding: 20px;
+    font-size: 30px;
+ color: rgb(245, 100, 100);   
+}
+.container .footer a i:hover{
+    color: #fff;
+}
+@media (max-width: 930px){
+    .container{
+        width: 100%;
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    .container .navigation{
+        margin-top: 20px;
+        margin-right:60px ;
+        font-size: 25px;
+        color: #fff;   
+    }
+    .container .navigation .bars{
+        display: block;
+        margin-top: 30px;
+    }
+    .container .navigation #check:checked ~ul{
+        left: 0;
+    }
+    
+    .container .navigation .logo{
+        width: 70px;
+    } 
+    .container .navigation ul{
+    margin-top: 100px;
+    position: fixed;
+    margin-left: 140px;
+    width: 300px;
+    height: 100vh;
+    left: -100%;
+    display: block;
+    }
+    .container .navigation ul li{
+        list-style: none;
+        padding: 20px;
+    }
+    .container .header{
+        display: none;
+    }
+    .container .form{
+        display: none;
+    }
+    .container .footer{
+        display: none;
+    }
+}
